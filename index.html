@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Archive ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Serif+Display&family=Montserrat:wght@400;500;600&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#24181b;background:#fff7f8;font-family:Montserrat,Arial,sans-serif}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(60px);opacity:.25;z-index:-1}
+body:before{width:280px;height:280px;background:#f4b9c6;top:-70px;left:-80px}
+body:after{width:320px;height:320px;background:#d9c0dc;right:-120px;bottom:-80px}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:center;gap:22px;padding:15px;background:rgba(255,247,248,.82);backdrop-filter:blur(14px);border-bottom:1px solid #ead9dd}
+nav a{color:#6f4b53;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+section{max-width:1050px;margin:auto;padding:90px 22px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding-top:110px}
+.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:11px;color:#9b6875}
+h1{font:600 clamp(54px,10vw,105px)/.9 "DM Serif Display",serif;margin:18px 0;color:#381d25}
+.hero p{max-width:620px;margin:25px auto;color:#775d63;line-height:1.8}
+.date{font:500 24px "Cormorant Garamond",serif;color:#8e5362}
+.btn{display:inline-block;margin-top:20px;padding:13px 23px;border:1px solid #c995a2;border-radius:30px;color:#6c3d49;text-decoration:none;background:#fff}
+.title{font:600 48px "DM Serif Display",serif;text-align:center;margin:0 0 12px}
+.sub{text-align:center;color:#80686e;margin-bottom:40px}
+.timeline{max-width:700px;margin:auto}
+.event{position:relative;padding:0 0 40px 35px;border-left:1px solid #d8b7c0}
+.event:before{content:"";position:absolute;left:-5px;top:2px;width:9px;height:9px;border-radius:50%;background:#a75d70}
+.event h3{font:600 30px "Cormorant Garamond",serif;margin:0 0 5px}
+.event p{color:#755f64;line-height:1.7;margin-top:5px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #ead9dd;border-radius:18px;overflow:hidden;box-shadow:0 10px 35px rgba(80,40,50,.07)}
+.card img,.card video{display:block;width:100%;height:290px;object-fit:cover;background:#eadde0}
+.card .caption{padding:15px 16px;color:#6d565c;font-size:12px;line-height:1.6}
+.letter{max-width:760px;margin:auto;background:#fff;border:1px solid #ead9dd;border-radius:22px;padding:38px;box-shadow:0 15px 50px rgba(80,40,50,.08)}
+.letter p{font:500 20px/1.75 "Cormorant Garamond",serif;color:#594047}
+.signature{text-align:right;font:600 25px "Cormorant Garamond",serif;color:#8e5362}
+footer{text-align:center;padding:50px 20px;color:#94777d;font-size:11px;letter-spacing:.08em}
+@media(max-width:600px){nav{gap:11px}nav a{font-size:9px}.letter{padding:25px}.card img,.card video{height:250px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#story">Story</a><a href="#memories">Memories</a><a href="#videos">Videos</a><a href="#letter">Letter</a>
+</nav>
+
+<header class="hero">
+<div>
+<div class="eyebrow">a little place for what we had</div>
+<h1>Our Little<br>Archive ♡</h1>
+<div class="date">July 22, 2025 — Our Anniversary</div>
+<p>Some memories don't need to be forgotten just because a chapter ends. This is a small collection of the moments that once meant everything to us.</p>
+<a class="btn" href="#story">Open our story ↓</a>
+</div>
+</header>
+
+<section id="story">
+<h2 class="title">Our Story</h2>
+<p class="sub">A few dates I'll always remember.</p>
+<div class="timeline">
+<div class="event"><h3>2025 — We Met</h3><p>The year our paths crossed. I didn't know then how important you would become to me.</p></div>
+<div class="event"><h3>July 22, 2025 — Our Anniversary</h3><p>The day our story became “us.” A date I'll always carry with me.</p></div>
+<div class="event"><h3>2026 — The Little Things</h3><p>All the random conversations, laughs, pictures, videos, and ordinary days that became special because they were ours.</p></div>
+</div>
+</section>
+
+<section id="memories">
+<h2 class="title">Our Memories</h2>
+<p class="sub">Little pieces of our time together.</p>
+<div class="gallery">
+<div class="card"><img src="assets/memory-01.jpg"><div class="caption">A memory worth keeping ♡</div></div>
+<div class="card"><img src="assets/memory-02.jpg"><div class="caption">One of those moments I'll remember.</div></div>
+<div class="card"><img src="assets/memory-03.png"><div class="caption">A little piece of our story.</div></div>
+<div class="card"><img src="assets/memory-04.png"><div class="caption">Thank you for the memories.</div></div>
+</div>
+</section>
+
+<section id="videos">
+<h2 class="title">Our Moments</h2>
+<p class="sub">Because some memories are better heard and seen.</p>
+<div class="gallery">
+<div class="card"><video controls playsinline src="assets/memory-01.mp4"></video><div class="caption">A moment I wanted to keep.</div></div>
+<div class="card"><video controls playsinline src="assets/memory-02.mp4"></video><div class="caption">Another little memory from us.</div></div>
+</div>
+</section>
+
+<section id="letter">
+<h2 class="title">One Last Letter</h2>
+<p class="sub">No pressure. No asking you to stay. Just a thank you.</p>
+<div class="letter">
+<p>To you,</p>
+<p>I don't really know how to put everything I feel into words right now. I still love you, and honestly, a part of me still wishes things could have turned out differently.</p>
+<p>But I heard you. I understand that you're tired, and I respect the peace and space you asked for.</p>
+<p>I made this little place because I didn't want our memories to disappear just because our relationship ended. What we had was real to me. The laughs, the random moments, the pictures, the days we spent together, and even the difficult parts—they all became a part of my life.</p>
+<p>Thank you for loving me. Thank you for choosing me for the time that you did. Thank you for every memory you gave me.</p>
+<p>I won't ask you to come back through this letter. I just want you to know that I will always be grateful that our paths crossed.</p>
+<p>If this really is our goodbye, then goodbye, my love. I hope life becomes kinder to you. I hope you find the peace you're looking for. And wherever life takes us, I'll always be thankful that, for a while, it was us.</p>
+<p>Take care of yourself.</p>
+<div class="signature">— Riddick ♡</div>
+</div>
+</section>
+
+<footer>Made from memories • 2025–2026</footer>
+</body>
+</html>
